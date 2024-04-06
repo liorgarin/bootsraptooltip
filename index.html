@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Website</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to our Shopping Website</h1>
+    <p>Browse our products and add them to your cart.</p>
+
+    <div class="row">
+      <div class="col-md-6">
+        <h3>Horse</h3>
+        <img src="media/images/horse.jpeg" alt="Horse" class="img-fluid" data-toggle="tooltip" data-placement="top" title="This is a horse">
+        <p>This is a horse.</p>
+        <button class="btn btn-primary" data-toggle="tooltip" data-placement="right" title="Add this item to your cart">Add to Cart</button>
+      </div>
+      <div class="col-md-6">
+        <h3>Fox</h3>
+        <img src="media/images/fox.png" alt="Fox" class="img-fluid" data-toggle="tooltip" data-placement="top" title="This is a fox">
+        <p style="text-align: left;">This is a fox.</p>
+        <button class="btn btn-primary" data-toggle="tooltip" data-placement="right" title="Add this item to your cart">Add to Cart</button>
+      </div>
+    </div><br>
+
+    <a href="delivery.html" class="btn btn-primary">Proceed to Delivery</a>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+  </script>
+</body>
+</html>
